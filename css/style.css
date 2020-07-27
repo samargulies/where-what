@@ -1,0 +1,130 @@
+body {
+  font-family: "clarendon-text-pro", "Superclarendon-Regular", "Rockwell", system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0 1em;
+  --system: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --brand: #FC7A24;
+  --gray-text: #AAAAAA;
+  --site-background: #F9F9F9;
+}
+
+a {
+  color: var(--brand);
+}
+
+header {
+  margin: 1em 0 2em 0;
+}
+.highlight {
+  font-weight: 500;
+  color: var(--brand);
+}
+.page-title {
+  font-size: 36px;
+  word-spacing: -0.5ex;
+  margin-bottom: 0;
+}
+.page-description {
+  padding: 0;
+  font-family: var(--system);
+  color: var(--gray-text);
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 0;
+  text-indent: 0.4ex;
+}
+
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.site {
+  flex: 1 1 350px;
+  margin: 0 0 2em;
+}
+
+.site a,
+.site a:visited {
+  display: block;
+  box-sizing: border-box;
+  border-top: var(--brand) 5px solid;
+  background-color: var(--site-background);
+  padding: 0 1.5em 1em;
+  transition: 0.15s ease all;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site a:hover,
+.site a:active {
+  box-shadow: 0 2px 9px 7px #0002;
+  transform: scale(1.1) rotate3d(1, 2.0, 3.0, 2deg);
+}
+
+.site h2 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.site p {
+  font-family: var(--system);
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.site--snow {
+  /* --brand: #1E86E9; */
+}
+
+.site--fast {
+  --brand: #F13A3A;
+}
+
+.site--address {
+  --brand: #1E86E9;
+}
+
+.page-footer {
+  margin: 1em 0 2em 0;
+}
+
+label {
+  font-family: var(--system);
+}
+
+input,
+textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 6px;
+  font-family: var(--system);
+}
+input {
+  max-width: 300px;
+}
+
+@media (min-width: 780px) {
+  header {
+    margin-left: 30%;
+  }
+  .page-title {
+    font-size: 56px;
+  }  
+  .page-description {
+    font-size: 26px;
+  }
+  .site {
+    flex-grow: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .site h2 {
+    font-size: 24px;
+  }
+  .page-footer {
+    margin-left: 30%;
+  }
+}
