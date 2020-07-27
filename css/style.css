@@ -91,6 +91,10 @@ header {
   margin: 1em 0 2em 0;
 }
 
+.page-footer h2 {
+  font-weight: 500;
+}
+
 label {
   font-family: var(--system);
 }
